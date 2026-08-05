@@ -1,0 +1,1082 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: white;
+
+}
+
+.hero {
+    min-height: 100vh;
+
+    background-image:
+        linear-gradient(rgba(3, 8, 18, 0.35), rgba(3, 8, 18, 0.75)),
+        url("./willgard-spaceship-5570682.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    animation: heroZoom 5s ease-in-out infinite alternate;
+
+}
+
+body {
+    background-color: #080b13;
+    background-image:
+        radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(147, 51, 234, 0.12) 0px, transparent 50%);
+    background-attachment: fixed;
+}
+
+@keyframes heroZoom {
+
+    from {
+        background-size: 110%;
+    }
+
+    to {
+        background-size: 100%;
+    }
+
+}
+
+.navbar {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: rgba(8, 22, 50, 0.568);
+
+}
+
+.logos {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-logo {
+    width: 100px;
+    height: 80px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 8px rgba(100, 220, 255, 0.45));
+}
+
+.logo-mark {
+    letter-spacing: 1px;
+}
+
+.nav-wrapper {
+    width: 86%;
+    height: 90px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+
+a {
+    color: rgb(255, 254, 254);
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: smaller;
+
+}
+
+
+.navigation a:hover {
+    color: lightblue;
+}
+
+.nav-cta {
+    padding: 10px 20px;
+    border: 1px solid rgb(149, 147, 147);
+    width: 250px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 40px;
+    margin-left: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-cta:hover {
+
+    background: rgba(255, 255, 255, 0.496);
+    color: black;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: rgb(3, 8, 18); */
+    color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+
+.heading {
+    color: white;
+
+}
+
+.hero-description {
+    color: rgb(198, 197, 197);
+
+    font-size: 0.8em;
+
+    /* margin-top: 2px; */
+
+    width: 50%;
+    padding-left: 100px;
+}
+
+.head1,
+.head2 {
+    font-size: 6.5rem;
+    font-family: "Orbitron", sans-serif;
+    text-align: left;
+    padding-left: 100px;
+    line-height: 1;
+}
+
+.head2 {
+    background:
+        linear-gradient(90deg,
+            white,
+            #a78bfa,
+            #22d3ee);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+
+
+
+.color {
+    padding: 10px 20px;
+    border: 1px solid rgb(149, 147, 147);
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(115deg,
+            #8067cc,
+            #2296ee, #22d3ee);
+    border-radius: 40px;
+    margin-top: 20px;
+    margin-left: 100px;
+    padding-left: 20px;
+    color: rgb(10, 1, 51);
+    font-weight: 500;
+}
+
+.color:hover {
+    box-shadow: 0px 0px 15px 2px #22d3ee;
+}
+
+/* & --- intro --- * */
+.earth {
+    width: 100%;
+    height: 100%;
+    /* margin-left: 100px; */
+    /* margin-right: 100px; */
+    margin-top: 30px;
+    color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #080b13;
+    background-image:
+        radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(147, 51, 234, 0.12) 0px, transparent 50%);
+    background-attachment: fixed;
+    padding-bottom: 50px;
+
+}
+
+.earth div {
+    width: 50%;
+    height: 100%;
+    margin-top: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+
+}
+
+/* .earth img {
+    width: 20%;
+    height: 20%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 2px #22d3ee;
+} */
+
+.one {
+    height: 300px;
+    width: 500px;
+    /* border: 1px solid white; */
+    padding-left: 50px;
+    margin-top: 0px auto;
+    margin-left: 80px;
+    align-self: flex-start;
+    color: cyan;
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.5em;
+    letter-spacing: 2px;
+}
+
+.two {
+    height: 500px;
+    width: 700px;
+    /* border: 1px solid white; */
+    padding-left: 0;
+    margin-left: -200px;
+
+}
+
+.two .pp1 {
+    color: cyan;
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.5em;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: "Orbitron", sans-serif;
+    text-align: left;
+    padding-left: 0px;
+    line-height: 1;
+}
+
+h2 span {
+    color: rgb(83, 149, 149);
+}
+
+.two p {
+    font-size: 0.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding-left: 0px;
+    line-height: 1.5;
+    color: darkgray;
+}
+
+.three {
+    height: 400px;
+    width: 400px;
+    /* border: 1px solid white; */
+    padding: 0;
+}
+
+/* & ---mission--- *  */
+
+.destination {
+    width: 100%;
+    height: 100%;
+    /* margin-left: 100px; */
+    /* margin-right: 100px; */
+    padding-top: 400px;
+    padding-bottom: 200px;
+    color: white;
+    /* display: flex;
+    flex-direction: row; */
+    justify-content: left;
+    align-items: center;
+    background-color: #080b13;
+    background-image:
+        radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(147, 51, 234, 0.12) 0px, transparent 50%);
+    background-attachment: fixed;
+    padding: 30px;
+}
+
+.desti-two {
+
+    width: 100%;
+    height: 100%;
+    margin-left: 100px;
+    line-height: 1.2;
+    padding-top: -100px;
+    margin-bottom: 50px;
+    margin-top: -20px;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.desti-three {
+    width: 80%;
+    height: 620px;
+    margin-right: 100px;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 0.8fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 20px;
+    padding-top: 50px;
+}
+
+.mission-grid {
+    width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.mission-card {
+    height: 480px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 26px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.mission-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.8s ease;
+}
+
+.orbit .mission-bg {
+    background-image:
+        url("https://media.istockphoto.com/id/957874610/photo/earth-sun-and-space-station.jpg?s=612x612&w=0&k=20&c=UBOXtW0sjMnR9R8b58LQRHuOj3M2N2pad-cqvcgSjHU=");
+}
+
+.moon .mission-bg {
+    background-image: url("https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?auto=format&fit=crop&w=1200&q=90");
+}
+
+.mars .mission-bg {
+    background-image: url("https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&fit=crop&w=1200&q=90");
+}
+
+.mission-card:hover .mission-bg {
+    transform: scale(1.08);
+}
+
+.mission-top {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    right: 25px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #d1d4df;
+}
+
+.mission-content {
+    position: absolute;
+    left: 28px;
+    right: 28px;
+    bottom: 28px;
+}
+
+.mission-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 8px;
+    letter-spacing: 2px;
+    color: #b6bbc8;
+    margin-bottom: 15px;
+}
+
+.mission-content h3 {
+    font-size: 50px;
+    letter-spacing: -2px;
+}
+
+.mission-content p {
+    font-size: 12px;
+    width: 340px;
+    margin: 12px 0 25px;
+}
+
+.mission-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    padding-top: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mission-footer span,
+.mission-footer a {
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+.mission-footer a {
+    display: flex;
+    gap: 8px;
+}
+
+.mission-footer i {
+    color: cyan;
+
+}
+
+/* &--- experience--- */
+.experience {
+    width: 100%;
+    height: 100%;
+
+    /* margin-right: 100px; */
+    padding-top: 100px;
+    padding-bottom: 200px;
+    color: white;
+    /* display: flex; */
+    /* flex-direction: column; */
+    justify-content: left;
+    align-items: center;
+    background-color: #080b13;
+    background-image:
+        radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(147, 51, 234, 0.12) 0px, transparent 50%);
+    background-attachment: fixed;
+
+}
+
+.exp-grid {
+    width: 900px;
+    height: 450px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.grid {
+    height: 280px;
+    width: 100%;
+    position: relative;
+    padding: 30px;
+    overflow: hidden;
+    border-radius: 22px;
+    border: 1px solid rgb(102, 101, 101);
+    background:
+        linear-gradient(145deg,
+            rgba(255, 255, 255, 0.07),
+            rgba(255, 255, 255, 0.015));
+    transition: 0.4s;
+}
+
+.grid:hover {
+
+    transform: translateY(-7px);
+    border-color: rgba(139, 92, 246, 0.45);
+    background:
+        linear-gradient(145deg,
+            rgba(139, 92, 246, 0.12),
+            rgba(255, 255, 255, 0.02));
+}
+
+.logo {
+
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(252, 232, 212);
+    border-radius: 50%;
+    color: cyan;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.grid h4 {
+    margin-top: 45px;
+    font-size: 22px;
+}
+
+.pp2 {
+    font-size: 12px;
+    margin-top: 13px;
+    width: 100%;
+    max-width: 380px;
+    color: rgb(181, 178, 178);
+}
+
+.large {
+    grid-row: span 2;
+    height: 575px;
+}
+
+.grid span {
+    position: absolute;
+    top: 32px;
+    right: 30px;
+    color: #555c6f;
+    font-size: 10px;
+}
+
+.grid a,
+.grid i {
+    font-size: smaller;
+    color: cyan;
+
+}
+
+.grid a {
+    font-size: xx-small;
+    margin-top: 100px;
+}
+
+/* &--spacecraft--& */
+.spacecraft {
+    width: 90vw;
+    height: 80vh;
+
+    margin: 80px auto 120px;
+    color: white;
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.space-img {
+    position: relative;
+    height: 500px;
+    border-radius: 24px;
+    overflow: hidden;
+    background:
+        linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(3, 8, 18, 0.65)),
+        url("https://images.unsplash.com/photo-1517976547714-720226b864c1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHJvY2tldCUyMGxhdW5jaHxlbnwwfHwwfHx8MA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.space-badge {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    background: rgba(5, 16, 36, 0.78);
+    color: #d8f0ff;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 10px;
+    padding: 8px 14px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.space-caption {
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+}
+
+.space-kicker {
+    color: #77e7ff;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.space-caption h3 {
+    font-size: 1rem;
+    font-family: "Orbitron", sans-serif;
+}
+
+.space-data {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.section-kicker {
+    color: #78d4ff;
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.72rem;
+    letter-spacing: 2px;
+    line-height: 1.4;
+}
+
+.space-copy h2 {
+    font-size: 3rem;
+    line-height: 0.95;
+    font-family: "Orbitron", sans-serif;
+}
+
+.space-copy h2 span {
+    color: rgb(83, 149, 149);
+}
+
+.space-copy p {
+    color: #b8c0d2;
+    font-size: 1rem;
+    line-height: 1.7;
+    max-width: 560px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 18px;
+    padding: 22px 18px;
+}
+
+.stat-number {
+    color: cyan;
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.stat-card h3 {
+    font-size: 2.4rem;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.stat-card .pp2 {
+    width: 100%;
+    margin: 0;
+    font-size: 0.72rem;
+    letter-spacing: 1.2px;
+    color: #b8c0d2;
+}
+
+.space-data .button.color {
+    width: 260px;
+    margin-left: 0;
+    margin-top: 4px;
+}
+
+/* &-- gallery --& */
+.gallery {
+    background: #05070d;
+    padding: 90px 20px 110px;
+}
+
+.section-heading {
+    max-width: 1250px;
+    margin: 0 auto 34px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 28px;
+}
+
+.section-tag {
+    color: cyan;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: "Orbitron", sans-serif;
+    margin-bottom: 12px;
+}
+
+.section-heading h2 {
+    font-size: 3rem;
+    line-height: 0.95;
+    font-family: "Orbitron", sans-serif;
+
+}
+
+.section-heading h2 span {
+    color: rgb(83, 149, 149);
+}
+
+.section-heading p {
+    color: #b8c0d2;
+    font-size: 0.95rem;
+    width: 320px;
+}
+
+.gallery-grid {
+    max-width: 1250px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 250px 250px;
+    gap: 14px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-item::after {
+
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.78));
+    z-index: 0;
+}
+
+.gallery-item span,
+.gallery-item div {
+    position: relative;
+    z-index: 1;
+}
+
+.gallery-item span {
+    font-size: 9px;
+    color: cyan;
+}
+
+.gallery-item div {
+    font-family: "Orbitron", sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.gallery-main {
+    border-radius: 20px;
+    grid-row: span 2;
+    object-fit: contain;
+    /* background-image:
+        url("https://plus.unsplash.com/premium_photo-1677609371686-2cd94779a864?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fGVhcnRoJTIwZnJvbSUyMG9yYml0fGVufDB8fDB8fHww"); */
+
+}
+
+.gallery-two {
+
+    background-image:
+        url("https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=800&q=90");
+
+}
+
+.gallery-three {
+
+    background-image:
+        url("https://media.istockphoto.com/id/1162816285/photo/view-of-moon-limb-with-earth-rising-on-the-horizon-footprints-as-an-evidence-of-people-being.jpg?s=2048x2048&w=is&k=20&c=cIBSzhh8nYWKjokt1KEZdi9Ikp37Xhbtf25jiWgMxLI=");
+
+}
+
+.gallery-four {
+
+    background-image:
+        url("./the\ moon.jpg");
+
+}
+
+.gallery-five {
+
+    background-image:
+        url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=90");
+
+}
+
+/* & --reserve-- */
+
+.final-cta {
+    min-height: 650px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    padding: 40px 20px;
+    background:
+        linear-gradient(rgba(5, 7, 13, 0.45), rgba(5, 7, 13, 0.9)),
+        url("https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=2200&q=90");
+    background-size: cover;
+    background-position: center;
+}
+
+.cta-stars {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: rgba(109, 40, 217, 0.38);
+    filter: blur(150px);
+    opacity: 0.16;
+}
+
+.cta-content {
+    position: relative;
+    width: 980px;
+}
+
+.cta-content h2 {
+    font-size: 3rem;
+    line-height: 0.92;
+    font-family: "Orbitron", sans-serif;
+    text-transform: uppercase;
+}
+
+.cta-content h2 span {
+    color: rgb(83, 149, 149);
+}
+
+.cta-content p {
+    width: 520px;
+    margin: 25px auto 35px;
+    color: #c9d1e0;
+    font-size: 0.98rem;
+}
+
+.button-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 26px;
+    border-radius: 999px;
+    background: linear-gradient(120deg, #8067cc, #2296ee, #22d3ee);
+    color: white;
+    font-size: 0.82rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    box-shadow: 0 12px 30px rgba(51, 124, 255, 0.22);
+    transition: 0.3s;
+}
+
+.button-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 40px rgba(51, 124, 255, 0.38);
+}
+
+.footer {
+    background: #03050a;
+    padding: 80px 7% 30px;
+}
+
+.footer-top {
+    max-width: 1250px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 60px;
+    padding-bottom: 80px;
+}
+
+.footer-brand p {
+    font-size: 12px;
+    max-width: 220px;
+    margin: 10px 0;
+}
+
+.footer-logo-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo {
+    width: 150px;
+    height: 150px;
+    margin-left: 100px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 10px rgba(100, 220, 255, 0.35));
+}
+
+.socials {
+    display: flex;
+    gap: 8px;
+}
+
+.socials a {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 50%;
+    font-size: 12px;
+    color: #a8b1c5;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    background: rgba(255, 255, 255, 0.333);
+    /* color: blue; */
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-column h4 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: grey;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.footer-column a:hover {
+    color: white;
+
+}
+
+.footer-bottom {
+    width: 1250px;
+    margin: auto;
+    padding-top: 25px;
+    border-top: 1px solid rgb(161, 154, 154);
+    display: flex;
+    justify-content: space-between;
+    color: #555c6e;
+    font-size: 12px;
+    letter-spacing: 2px;
+
+}
+
+/* & -- registration & -- */
+
+.registration {
+    width: 800px;
+    margin: 120px auto 60px;
+}
+
+.registration-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.registration-heading p {
+    font-family: "Roboto", sans-serif;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.registration-heading h1 {
+    font-family: "orbitron", sans-serif;
+    font-size: 60px;
+    color: white;
+    margin: 15px 0;
+}
+
+.registration-heading h1 span {
+    color: rgb(83, 149, 149);
+}
+
+.registration form {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border: 1px solid #444;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    color: #ddd;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    background-color: #101820;
+    border: 1px solid #555;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #9db4c4;
+}
+
+.radio-group {
+    display: flex;
+    gap: 25px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.terms {
+    margin: 25px 0;
+}
+
+.terms label {
+    /* display: flex; */
+    align-items: center;
+    gap: 8px;
+    color: #aaa;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px;
+    border-top: 1px solid #333;
+    color: #777;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+}

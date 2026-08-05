@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASTRA</title>
+    <link rel="stylesheet" href="astra.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Doto:wght@100..900&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" type="image/png" href="./LOGO.png">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-wrapper">
+            <a href="#home" class="logos">
+                <img src="./LOGO.png" alt="ASTRA logo" class="brand-logo">
+                <!-- <div class="logo-mark">
+                        ✦ &nbsp;ASTRA
+                    </div> -->
+            </a>
+            <nav class="navigation">
+
+                <a href="astra.html">Home</a>
+
+                <a href="./mission.html">Missions</a>
+
+                <a href="./experience.html" target="_blank">Experience</a>
+
+                <a href="./spacecraft.html" target="_blank">Spacecraft</a>
+
+                <a href="./gallery.html" target="_blank">Gallery</a>
+
+                <a href="./reserve.html" class="nav-cta">Reserve</a>
+            </nav>
+        </div>
+    </header>
+    <section class="registration">
+        <div class="registration-heading">
+            <p>06 / RESERVE YOUR SEAT</p>
+            <h1>BEGIN YOUR<span> JOURNEY.</span></h1>
+            <p>Register your interest in experiencing the future of interplanetary travel.</p>
+        </div>
+        <form action="">
+            <div class="form-group">
+                <label for="fullname">FULL NAME</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">EMAIL ADDRESS</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">PHONE NUMBER</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">DATE OF BIRTH</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="">GENDER</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="gender" value="male">Male</label>
+                    <label>
+                        <input type="radio" name="gender" value="female">Female</label>
+                    <label>
+                        <input type="radio" name="gender" value="other">Other
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="country">COUNTRY</label>
+                <select id="country" name="country" required>
+                    <option value="">Select your country</option>
+                    <option value="india">India</option>
+                    <option value="usa">United States</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="canada">Canada</option>
+                    <option value="australia">Australia</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="destination">PREFERRED DESTINATION</label>
+                <select id="destination" name="destination" required>
+                    <option value="">Select your destination</option>
+                    <option value="orbit">Low Earth Orbit</option>
+                    <option value="moon">Lunar Experience</option>
+                    <option value="mars">Mars Expedition</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="passengers">NUMBER OF PASSENGERS</label>
+                <input type="number" id="passengers" name="passengers" min="1" max="10" placeholder="1" required>
+            </div>
+            <div class="form-group">
+                <label for="travel-date">PREFERRED TRAVEL DATE</label>
+                <input type="date" id="travel-date" name="travel-date" required>
+            </div>
+            <div class="form-group">
+                <label for="experience">SPACE TRAVEL EXPERIENCE</label>
+                <select id="experience" name="experience">
+                    <option value="">Select an option</option>
+                    <option value="first-time">First Space Journey</option>
+                    <option value="experienced">Previous Space Experience</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">TELL US ABOUT YOUR JOURNEY</label>
+                <textarea id="message" name="message" rows="6"
+                    placeholder="Tell us why you want to travel beyond Earth..."></textarea>
+            </div>
+            <div class="terms">
+                <label>
+                    <input type="checkbox" name="terms" required>
+                    I agree to the ASTRA
+                    terms and conditions.
+                </label>
+            </div>
+            <button type="submit" class="submit-btn">
+                REQUEST RESERVATION
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </form>
+    </section>
+
+    <footer>
+        <p>ASTRA — BEYOND EARTH</p>
+        <p>© 2026 ASTRA. ALL RIGHTS RESERVED.</p>
+    </footer>
+</body>
+
+</html>
